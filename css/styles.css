@@ -9,3 +9,11 @@
     white-space: nowrap;
     border: 0;
 }
+.dots {
+    text-decoration: underline dotted;
+    border-bottom: 2px dotted #000;
+
+
+
+  }
+  
