@@ -8,8 +8,43 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
+
 <body>
-   
+    <h1>Contact Us</h1>
+    <form id="contactForm" method="POST" action="http://rdwd.atspace.cc/response.php" onsubmit="return validateForm()">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" /><br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" required pattern="08[567][0-9]{7}" /><br>
+
+        <label for="email1">Email:</label>
+        <input type="email" id="email1" name="email1" required /><br>
+
+        <label for="email2">Retype Email:</label>
+        <input type="email" id="email2" name="email2" required /><br>
+
+        <fieldset>
+            <legend>Membership:</legend>
+            <label for="member">
+                <input type="radio" id="member" name="member" value="member" required />
+                Member
+            </label>
+            <label for="nonmember">
+                <input type="radio" id="nonmember" name="member" value="non-member" />
+                Non-Member
+            </label>
+        </fieldset>
+
+        <label for="query">Comment/Query:</label>
+        <textarea id="query" name="query" required></textarea><br>
+
+        <input type="submit" value="Submit" />
+    </form>
 </body>
 <script src="js/main.js"></script>
 

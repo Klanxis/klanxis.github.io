@@ -34,3 +34,21 @@ document.querySelector('#img2').addEventListener("mouseover", hoverswap);
 document.querySelector('#img3').addEventListener("mouseover", hoverswap);
 document.querySelector('#img4').addEventListener("mouseover", hoverswap);
 
+//form validation
+function validateForm() {
+    const email1 = document.getElementById('email1').value;
+    const email2 = document.getElementById('email2').value;
+    if (email1 !== email2) {
+      alert("Email addresses do not match.");
+      return false;
+    }
+
+    const mobile = document.getElementById('mobile').value;
+    if (!/^08[567]\d{7}$/.test(mobile)) {
+      alert("Invalid Irish mobile number.");
+      return false;
+    }
+
+    return true;
+
+}
