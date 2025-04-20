@@ -4,21 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Klanxis' Website</title>
+    <title>Welcome to Klanxis's' Website</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav>
-        <a href ="index.html">Home</a>
+
+
+    <div class="nav">
+        <a href="index.html">Home</a>
         <a href="articles.html">Articles</a>
         <a href="gallery.html">Gallery</a>
         <a href="games.html">Games</a>
         <a href="videos.html">Videos</a>
+    </div>
 
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
- 
-    </nav>
+    <div class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="videos.html">Videos</a></li>
+      </ul>
+    </div>
+
     <span>
         Vibe coder and
         <span class="dots" title="with someone else doing the view, controller and model">
@@ -27,17 +39,19 @@
     </span>
 
     <div class="grid-container">
-    <h1>Gallery</h1>
-    <a href="gallery.html">Photo Gallery</a>
-
-    <h1>Contact Us</h1>
-    <a href="contact.html">Contact Page</a>
-
-    <h1>Articles</h1>
-    <a href="articles.html">More Articles</a>
 
 
-</div>
+        <h1>Articles</h1>
+        <a href="articles.html">More Articles</a>
+        <h1>Gallery</h1>
+        <a href="gallery.html">Photo Gallery</a>
+        <h1>Games</h1>
+        <a href="games.html">Games</a>
+        <h1>Videos</h1>
+        <a href="videos.html">Videos</a>
+
+
+    </div>
     <!-- 
 Your site should contain the following pages:
 
@@ -49,6 +63,6 @@ Page/Events Page/ Results/Information Page).-->
 
     <!--useful links-->
 </body>
-    <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 </html>

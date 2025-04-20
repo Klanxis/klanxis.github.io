@@ -52,3 +52,7 @@ function validateForm() {
     return true;
 
 }
+//hamburger menu
+function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
