@@ -79,11 +79,13 @@ a:hover {
 ;}
 
 
+
 footer{
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  margin-top: auto;
+
 }
 /*grid*/
 
@@ -156,6 +158,9 @@ footer{
 .nav-menu.show {
   display: block;
 }
+
+
+
 
 /*media queries*/
 
