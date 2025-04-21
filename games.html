@@ -3,26 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
+    <title>Ludi</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
+  
     <header>
-        <h1>Check out these Games</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="games.html">Games</a>
+            <a href="videos.html">Videos</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+
     </header>
+        <h1>Check out these Games</h1>
+
     <main>
         <p>Here you will find a collection of my Games.</p>
     </main>
-    <nav>
-        <ul>
-            <p></p>
+    <div class="spacer"></div>
+    <div class="grid-container">
+
             <a href="http://klanxis.itch.io/tba">TBA</a>
-            <p></p>
+
             <a href="https://topyk.itch.io/emily-goes-shopping">Emily goes Shopping</a>
-            <p></p>
-        </ul>
-    </nav>
-    <footer>
-        <p>&copy; 2023 Klanxis. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+            <p></p> 
+        </div>
+
+            <footer>
+                <a href="contact.html">Contact</a>
+                <p>&copy; 2023 Klanxis. All rights reserved.</p>
+            </footer>
+        </body>
+        <script src="js/main.js"></script>
+        
+        </html>

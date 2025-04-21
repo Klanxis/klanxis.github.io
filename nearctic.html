@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <a href="/">Home</a>
 
+    <header>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="games.html">Games</a>
+            <a href="videos.html">Videos</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+
+    </header>
 
      <h1>On the Nearctic</h1>
     <hr>
@@ -18,7 +39,8 @@
     </em>
 
 
-As we all know the word arctic means next to the bear, which is why polar bears were allowed to settle there.
+<div class="article">
+    As we all know the word arctic means next to the bear, which is why polar bears were allowed to settle there.
 <p></p>
 
 For most of known time, the Nearctic
@@ -42,16 +64,24 @@ Unfortunately, neither Sweden nor Russia nor Rusweden (working title) are in the
 
 All in all I wouldn’t recommend moving to the Nearctic, because would you rather meet an immigrant or a polar bear in Sweden?
 
-<p></p>
-<p style="height: 30px;"></p>
+<div class="spacer"></div>
 This article wasn’t featured on ChatGPT’s content of the minute. Check out the rave reviews:
+
+</div>
+<p></p>
+<div class="spacer"></div>
+  
 
 <blockquote>
     <p><em>“It’s a solid piece of surrealist humor with a good balance of nonsense and history trivia.”</em></p>
     <p>— ChatGPT</p>
   </blockquote>
+    
   <footer>
+    <a href="contact.html">Contact</a>
     <p>&copy; 2023 Klanxis. All rights reserved.</p>
 </footer>
 </body>
+<script src="js/main.js"></script>
+
 </html>

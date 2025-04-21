@@ -6,41 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Pitora</title>
     <link rel="stylesheet" href="css/styles.css">
- 
 </head>
 
 <body>
+
+    <header>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="games.html">Games</a>
+            <a href="videos.html">Videos</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+
+    </header>
     <div class="sr-only">
         <p>The opposite of love isn't hate, it's apathy</p>
     </div>
+    <img id="large" src="img/kda1.jpg" width="100%" height="auto">
+    <div class="button-container">
+        <button id="prev" onclick="prev()">&#8592;</button>
+        <button id="next" onclick="next()">&#8594;</button>
+    </div>
+    <div class="thumb-container">
 
-            <img id="large" src="img/kda1.jpg" width="100%" height="auto">
+        <img id="img1" src="img/thumb1.png" width="50">
+        <img id="img2" src="img/thumb2.png" width="50">
+        <img id="img3" src="img/thumb3.png" width="50">
+        <img id="img4" src="img/thumb4.png" width="50">
 
-
-<div class="button-container">
-    <button id="prev" onclick="prev()">&#8592;</button>
-    <button id="next" onclick="next()">&#8594;</button>
-</div>
-<div class="thumb-container">
-
-            <img id="img1" src="img/thumb1.png" width="50">
-            <img id="img2" src="img/thumb2.png" width="50">
-            <img id="img3" src="img/thumb3.png" width="50">
-            <img id="img4" src="img/thumb4.png" width="50">
-     
-
-           
-          
-        </div>
-   
-
-
-
+    </div>
     <footer>
         <p>
-            All images and media used on this page are the property of their respective owners. This page is created for educational and non-commercial purposes only. No copyright infringement is intended.
-          </p>
-        
+            All images and media used on this page are the property of their respective owners. This page is created for
+            educational and non-commercial purposes only. No copyright infringement is intended.
+        </p>
     </footer>
     <script src="js/main.js"></script>
 </body>

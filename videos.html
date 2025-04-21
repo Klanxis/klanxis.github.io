@@ -4,31 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games</title>
+    <title>Videos</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
+   
     <header>
-        <h1>ビデオ</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="games.html">Games</a>
+            <a href="videos.html">Videos</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+
     </header>
+        <h1>ビデオ</h1>
+
     <main>
         <p>Every great hero needs to be witnessed. You can do that here.</p>
     </main>
-    <nav>
-        <ul>
+
             <iframe width="560" height="315" src="https://www.youtube.com/embed/hTyzWVimBiQ?si=PdOF0H_glJk8UXNk"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-        </ul>
+                <p></p>
+
 Check out more here:
 
 <a href="https://www.youtube.com/@Klanxis">Klanxis</a>
         
     </nav>
     <footer>
+        <a href="contact.html">Contact</a>
         <p>&copy; 2023 Klanxis. All rights reserved.</p>
     </footer>
 </body>
+<script src="js/main.js"></script>
 
 </html>

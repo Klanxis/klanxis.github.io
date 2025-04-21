@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles</title>
+    <title>Recipes</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 <body>
+
     <header>
-        <h1>Welcome to My Articles</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="articles.html">Articles</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="games.html">Games</a>
+            <a href="videos.html">Videos</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </div>
+
     </header>
+    <h1>Intellectual Menu:</h1>
+
     <main>
-        <p>Here you will find a collection of my articles.</p>
+        <p>Here you will find a collection of my dishes.</p>
     </main>
-    <nav>
-        <ul>
-            <li><a href="roblox.html">Roblox</a></li>
-            <li><a href="nearctic.html">Nearctic</a></li>
-        </ul>
-    </nav>
+    <div class="spacer"></div>
+    <div class="grid-container">
+
+        <a href="roblox.html">Roblox</a>
+        <a href="nearctic.html">Nearctic</a>
+        <p></p>
+
+    </div>
     <footer>
+        <a href="contact.html">Contact</a>
         <p>&copy; 2023 Klanxis. All rights reserved.</p>
     </footer>
 </body>
+<script src="js/main.js"></script>
+
 </html>
